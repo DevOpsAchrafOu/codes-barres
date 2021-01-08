@@ -3,9 +3,14 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  }
+    path: 'bar-code',
+    loadChildren: () => import('./pages/bar-code/bar-code.module').then( m => m.BarCodePageModule)
+  },
+  {
+    path: "",
+    redirectTo: "bar-code",
+    pathMatch: "full",
+  },
 ];
 @NgModule({
   imports: [

@@ -1,5 +1,8 @@
 {
   "name": "codes-barres",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
   "type": "angular"
 }
