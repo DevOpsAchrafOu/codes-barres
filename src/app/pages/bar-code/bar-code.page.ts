@@ -11,9 +11,19 @@ import {
 })
 export class BarCodePage {
 
-  /*Installation (for capacitor): 
+  /*
+  1_Installation (before import):
+    npm install
+  2_Installation (for capacitor): 
     npm install phonegap-plugin-barcodescanner
     npm install @ionic-native/barcode-scanner
+  
+  3_build by capacitor:
+    ionic build
+    ionic capacitor add  android
+    ionic capacitor copy  android
+    cd .\android\
+    .\gradlew assembleDebug
   */
   options: BarcodeScannerOptions;
   data: any;
